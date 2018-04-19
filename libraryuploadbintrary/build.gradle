@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 26
@@ -31,4 +32,15 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+}
+
+publish {
+    artifactId = 'apiFactory-annotation'
+    userOrg = 'liul1'
+    groupId = 'test.library.libraryuploadbintraryt'
+    uploadName = 'libraryuploadbintraryt'
+    publishVersion = '1.0.0'
+    desc = 'Request code can be generated automatically'
+    website = "https://github.com/liulilei/${rootProject.name}"
+    licences = ['Apache-2.0']
 }
