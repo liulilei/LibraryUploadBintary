@@ -23,6 +23,11 @@ android {
         }
     }
 
+    lintOptions {
+        abortOnError false
+    }
+
+
 }
 
 dependencies {
@@ -39,7 +44,7 @@ publish {
     userOrg = 'liul1'
     groupId = 'test.library.libraryuploadbintraryt'
     uploadName = 'libraryuploadbintraryt'
-    publishVersion = '1.0.0'
+    publishVersion = '1.1.0'
     desc = 'Request code can be generated automatically'
     website = "https://github.com/liulilei/${rootProject.name}"
     licences = ['Apache-2.0']
